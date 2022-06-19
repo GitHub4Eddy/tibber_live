@@ -67,14 +67,17 @@ The scopes your app requires depend on the type of data it is trying to request.
 If you for example need access to user information you add the USER scope. 
 If information about the user's homes is needed you add the appropriate HOME scopes.
 If you have more than one home in your subscription, you need to fill in your home number the change between your homes. 
- 
+
+If the Tibber server disconnects the webSocket, the QuickApp wil do a re-connect for the amount in the QuickApp variable reconnect. 
+If the re-connect fails for that amount, there will be a timeout for the seconds in the QuickApp variable timeout. 
+
 Use this QuickApp at your own risk. You are responsible for ensuring that the information provided via this QuickApp do not contain errors. 
 Tibber is a registered trademark being the property of TIBBER. TIBBER reserves all rights to the registered trademarks.
 Information which is published on TIBBER’s websites belongs to TIBBER or is used with the permission of the rights holder. 
 Making of copies, presentations, distribution, display or any other transfer of the information on the website to the public is, except for strictly private use, prohibited unless done with the consent of TIBBER. 
 Published material on dedicated TIBBER press websites, intended for public use, is exempt from the consent requirement.
 Also see: https://tibber.com/en/legal-notice
- 
+
 Guide Communicating with the Tibber API: https://developer.tibber.com/docs/guides/calling-api
 Tibber API Explorer: https://developer.tibber.com/explorer
 Fibaro webSocket manual: https://manuals.fibaro.com/knowledge-base-browse/hc3-quick-apps-websocket-client/
@@ -82,14 +85,16 @@ Fibaro Forum Headers in webSocket: https://forum.fibaro.com/topic/60307-added-su
 WebSocket++ Documentation: https://docs.websocketpp.org
 GraphQL query language: https://spec.graphql.org/June2018/#sec-Language
  
-
-Version 1.0 (soon)
+Version 1.0 (19th June 2022)
 - Initial webSocket version Tibber Live
-- Thanks JcBorgs for testing all initial/beta versions
+- Thanks @JcBorgs for testing all beta versions and great suggestion to improve the quickapp
+- Based on the Fibaro WebSockets/GraphQL demo by Peter Gebruers 
 
 Variables (mandatory and created automatically): 
 - token = Authorization token (see the Tibber website: https://developer.tibber.com)
 - homeId = Tibber Home ID (see the Tibber website: https://developer.tibber.com)
+- reconnect = Amount of re-connects after disconnect from Tibber server (default = 10)
+- timeout = Pause after maximum amount of re-connects (default = 300)
 - debugLevel = Number (1=some, 2=few, 3=all, 4=Offline Simulation Mode, 5=Live Test Mode) (default = 1)
  
 Fibaro Firmware:
