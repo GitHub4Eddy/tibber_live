@@ -12,9 +12,11 @@ Main device with positive or negative actual power consumption
 Child devices are available for:
 - power (Actual consumption with maxPower in log text)
 - powerProduction (Actual production with maxPowerProduction in log text)
-- accumulatedConsumption (Todays consumption, also child device for the Energy Panel)
+- accumulatedConsumption (Todays consumption, also the child device for the Energy Panel)
 - accumulatedProduction (Todays production)
 - accumulatedCost (Todays cost)
+- accumulatedConsumptionLastHour (Consumed since since last hour shift)
+- accumulatedProductionLastHour (Produced since last hour shift)
 - lastMeterConsumption (Total consumption)
 - lastMeterProduction (Total production)
 - voltagePhase1
@@ -24,7 +26,6 @@ Child devices are available for:
 - currentL2
 - currentL3
  
-image.thumb.png.ae32b9cd06deb943ea439fb6b3686db7.png
  
 Available information: 
 - power (Consumption at the moment (Watt))
@@ -51,6 +52,7 @@ Available information:
 - powerReactive (Reactive consumption (Q+) at the moment (kVAr)) *
 - powerProductionReactive (Net reactive production (Q-) at the moment (kVAr)) *
 - minPowerProduction (Min net production since midnight (Watt))
+- maxPowerProduction (Max net production since midnight (Watt))
 - powerFactor (Power factor (active power / apparent power)) *
 - signalStrength (Device signal strength (Pulse - dB; Watty - percent)) *
 - timestamp (Timestamp when usage occurred)
@@ -85,6 +87,14 @@ Fibaro Forum Headers in webSocket: https://forum.fibaro.com/topic/60307-added-su
 WebSocket++ Documentation: https://docs.websocketpp.org
 GraphQL query language: https://spec.graphql.org/June2018/#sec-Language
  
+Version 2.0 (5th August 2022)
+- Added two child devices, Hourly Consumption and Hourly Production
+- Added re-connect routine to handleError. If an Tibber error occurs, the QuickApp will try to re-connect. Thanks @JcBorgs for testing. 
+- Improved routine to handle Tibber null values 
+- Changed labels a bit to save some space
+- Changed "volt" and "amp" text in the labels
+- Changed kWh device types from com.fibaro.electricMeter to com.fibaro.energyMeter
+
 Version 1.0 (19th June 2022)
 - Initial webSocket version Tibber Live
 - Thanks @JcBorgs for testing all beta versions and great suggestion to improve the quickapp
