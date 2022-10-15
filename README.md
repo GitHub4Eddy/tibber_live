@@ -87,7 +87,7 @@ Fibaro Forum Headers in webSocket: https://forum.fibaro.com/topic/60307-added-su
 WebSocket++ Documentation: https://docs.websocketpp.org
 GraphQL query language: https://spec.graphql.org/June2018/#sec-Language
  
-Version 2.1 15th October 2022
+Version 2.1 (15th October 2022)
 - Child devices are now updated every (whole) minute to reduce CPU load
 - Replaced zero values for Voltage L1 L2 L3 with the previous value
 
