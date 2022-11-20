@@ -85,11 +85,17 @@ Also see: https://tibber.com/en/legal-notice
 
 Guide Communicating with the Tibber API: https://developer.tibber.com/docs/guides/calling-api
 Tibber API Explorer: https://developer.tibber.com/explorer
+Tibber gitHub: https://github.com/tibber
+Tibber SDK NET: https://github.com/tibber/Tibber.SDK.NET/tree/master/src/Tibber.Sdk
 Fibaro webSocket manual: https://manuals.fibaro.com/knowledge-base-browse/hc3-quick-apps-websocket-client/
-Fibaro Forum Headers in webSocket: https://forum.fibaro.com/topic/60307-added-support-for-headers-in-websocket-connections-any-documentation
+Fibaro Forum - Headers in webSocket: https://forum.fibaro.com/topic/60307-added-support-for-headers-in-websocket-connections-any-documentation
 WebSocket++ Documentation: https://docs.websocketpp.org
+GraphQL over WebSocket Protocol: https://github.com/enisdenjo/graphql-ws/blob/master/PROTOCOL.md
 GraphQL query language: https://spec.graphql.org/June2018/#sec-Language
- 
+
+Version 2.2 (20th November 2022)
+- Changed to new Tibber webSocket requirements, required from December 2022
+
 Version 2.1 (15th October 2022)
 - Child devices are now updated every (whole) minute to reduce CPU load
 - Replaced zero values for Voltage L1 L2 L3 with the previous value
