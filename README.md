@@ -130,8 +130,10 @@ Version 1.0 (19th June 2022)
 Variables (mandatory and created automatically): 
 - token = Authorization token (see the Tibber website: https://developer.tibber.com)
 - homeId = Tibber Home ID (see the Tibber website: https://developer.tibber.com)
+- homeNr = Tibber home (nodes) number if you have more than one home (default = 1)
+- language = Preferred language (default = en) (supported languages are English (en), Swedisch (se), Norwegian (no) and Dutch (nl))
 - reconnect = Amount of re-connects after disconnect from Tibber server (default = 10)
-- timeout = Pause after maximum amount of re-connects (default = 300)
+- timeout = Pause after maximum amount of re-connects (default = 300 seconds)
 - debugLevel = Number (1=some, 2=few, 3=all, 4=Offline Simulation Mode, 5=Live Test Mode) (default = 1)
  
 Fibaro Firmware:
