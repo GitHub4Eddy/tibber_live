@@ -93,6 +93,20 @@ WebSocket++ Documentation: https://docs.websocketpp.org
 GraphQL over WebSocket Protocol: https://github.com/enisdenjo/graphql-ws/blob/master/PROTOCOL.md
 GraphQL query language: https://spec.graphql.org/June2018/#sec-Language
 
+Version 3.0 (8th March 2023)
+- Removed Tibber old Websocket code
+- Prepared, not enabled: Check home.features.realTimeConsumptionEnabled has a true value always before reconnecting
+- Prepared, not enabled: Added button to disconnect or re-connect the Tibber webSocket
+- Prepared: Added quickapp variable homeNr (most of the time 1) to be able to check the response realTimeConsumptionEnabled
+
+Version 2.3 (beta 8th December 2022)
+- Improved the 60 seconds interval child devices update, it now never skips a beat
+- Added translation for English (en), Dutch (nl), Swedish (se), Norwegian (no)
+- Changed the json response for the debugLevel=4 Offline Simulation mode, the date/time format was wrong
+- Added random (jitter) reconnection handleDisconnected and handleError between 10 and 15 seconds
+- Added random (jitter) reconnection interval handleDisconnected and handleError plus between 1 and 10 seconds
+- Added exponential backoff (increasing delay) between each timeout. The increase is limited to 10 times the value in the quickapp reconnect variable. 
+
 Version 2.2 (20th November 2022)
 - Changed to new Tibber webSocket requirements, required from December 2022
 
