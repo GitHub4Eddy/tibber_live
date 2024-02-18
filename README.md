@@ -7,9 +7,7 @@ This QuickApp can be used in combination with the Tibber Monitor to get the Tibb
 Based on the Fibaro WebSockets/GraphQL demo by Peter Gebruers 
  
 If you use Tibber for your Energy Panel, you can use this Tibber Live QuickApp for your energy consumption and production combined with the Tibber Monitor QuickApp to provide the Energy Panel with the hourly prices. 
- 
-image.thumb.png.56fe7d0592d4954d5fe3f40f4c7b0549.png
- 
+
 Main device with positive or negative actual power consumption
  
 Child devices are available for:
