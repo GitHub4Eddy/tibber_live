@@ -81,15 +81,15 @@ Making of copies, presentations, distribution, display or any other transfer of 
 Published material on dedicated TIBBER press websites, intended for public use, is exempt from the consent requirement.
 Also see: https://tibber.com/en/legal-notice
 
-Guide Communicating with the Tibber API: https://developer.tibber.com/docs/guides/calling-api
-Tibber API Explorer: https://developer.tibber.com/explorer
-Tibber gitHub: https://github.com/tibber
-Tibber SDK NET: https://github.com/tibber/Tibber.SDK.NET/tree/master/src/Tibber.Sdk
-Fibaro webSocket manual: https://manuals.fibaro.com/knowledge-base-browse/hc3-quick-apps-websocket-client/
-Fibaro Forum - Headers in webSocket: https://forum.fibaro.com/topic/60307-added-support-for-headers-in-websocket-connections-any-documentation
-WebSocket++ Documentation: https://docs.websocketpp.org
-GraphQL over WebSocket Protocol: https://github.com/enisdenjo/graphql-ws/blob/master/PROTOCOL.md
-GraphQL query language: https://spec.graphql.org/June2018/#sec-Language
+- Guide Communicating with the Tibber API: https://developer.tibber.com/docs/guides/calling-api
+- Tibber API Explorer: https://developer.tibber.com/explorer
+- Tibber gitHub: https://github.com/tibber
+- Tibber SDK NET: https://github.com/tibber/Tibber.SDK.NET/tree/master/src/Tibber.Sdk
+- Fibaro webSocket manual: https://manuals.fibaro.com/knowledge-base-browse/hc3-quick-apps-websocket-client/
+- Fibaro Forum - Headers in webSocket: https://forum.fibaro.com/topic/60307-added-support-for-headers-in-websocket-connections-any-documentation
+- WebSocket++ Documentation: https://docs.websocketpp.org
+- GraphQL over WebSocket Protocol: https://github.com/enisdenjo/graphql-ws/blob/master/PROTOCOL.md
+- GraphQL query language: https://spec.graphql.org/June2018/#sec-Language
 
 Version 3.0 (8th March 2023)
 - Removed Tibber old Websocket code
